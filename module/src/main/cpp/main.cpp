@@ -28,7 +28,7 @@ public:
 //        if (strcmp(package_name, AimPackageName) == 0){
 //            args->runtime_flags=8451;
 //        }
-        LOGI("preAppSpecialize %s %s %d", package_name, app_data_dir,args->runtime_flags);
+        LOGI("preAppSpecialize %s %s %s %d", package_name, AimPackageName, app_data_dir,args->runtime_flags);
 
         preSpecialize(package_name, app_data_dir);
         env->ReleaseStringUTFChars(args->nice_name, package_name);
